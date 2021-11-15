@@ -1,0 +1,12 @@
+name: napari_animation
+display_name: animation
+license: BSD-3-Clause
+entry_point: napari_animation
+contributions:
+  commands:
+    - id: napari_animation.widget
+      python_name: napari_animation._hookimpls:napari_experimental_provide_dock_widget
+      title: napari animation widget
+  widgets:
+    - command: napari_animation.widget
+      name: wizard
